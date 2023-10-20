@@ -60,12 +60,6 @@ replaceInText(document.body, "To get the extra functionality of the Site builder
 replaceInText(document.body, "Or you can upgrade your entire free hosting account to premium using our upgrade process here:", "");
 replaceInText(document.body, "Upgrade to a iFastNet paid plan to get PHP selector with the option of PHP 4.4, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 & 8.1 !", "");
 replaceInText(document.body, "Upgrade to a paid plan to get Cron functionality, SMTP/POP/IMAP, PHPSendmail, free domains and unlimited space!", "");
-replaceInText(document.body, "", "");
-replaceInText(document.body, "", "");
-replaceInText(document.body, "", "");
-replaceInText(document.body, "", "");
-replaceInText(document.body, "", "");
-replaceInText(document.body, "", "");
 }
 
 document.addEventListener("DOMContentLoaded",function(event){
