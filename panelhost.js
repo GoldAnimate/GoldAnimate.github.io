@@ -39,12 +39,14 @@ replaceInText(document.body, "If it is available you can have it in less than si
 replaceInText(document.body, "If you do not already own a domain name, we can supply premium hosting, with the domain name of your choice, starting at $2.99 per month (for the domain name , and hosting package).", "");
 replaceInText(document.body, "Why not try checking now to see if your domain name is still available using the checker below", "");
 replaceInText(document.body, "If it is available in 6 clicks you can be up and running !", "");
-replaceInText(document.body, "Premium hosting allow you to create multiple FTP accounts with the ability to select an individual document root for each FTP user.", "");
+replaceInText(document.body, "Premium hosting allow you to create multiple FTP accounts with the ability to select an individual document root", "");
+replaceInText(document.body, ' for each FTP user.  To find out more and to order please click here.', "");
 replaceInText(document.body, "To find out more and to order please", "");
 replaceInText(document.body, "Would like a one click backup tool ? Upgrade to premium hosting where in one click you can backup your account !", "");
 replaceInText(document.body, "Get the latest cPanel, free domain names, free SSL certificates for all your domain, Softaculous, enhanced PHP, Massive MySQL performance, Perl, Ruby on rails and much much more on Premium hosting now !", "");
 replaceInText(document.body, "Free domains are included with most plans including .COM, .NET, .ORG and .INFO", "");
-replaceInText(document.body, "Did you know premium hosting allows you to create individual MySQL users and privileges? All premium accounts have upto 1GB of mysql storage. To see a demo:", "");
+replaceInText(document.body, "Did you know premium hosting allows you to create individual MySQL users and privileges? All premium accounts have upto 1GB of mysql storage.", "");
+replaceInText(document.body, 'To see a demo:  Click here', "");
 replaceInText(document.body, "Premium hosting MySQL server benefits :", "");
 replaceInText(document.body, "- Create individual MySQL users.", "");
 replaceInText(document.body, "- Set individual MySQL grants per user.", "");
