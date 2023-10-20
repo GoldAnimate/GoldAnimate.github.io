@@ -22,7 +22,7 @@ if(document.getElementById("item_two_factor_authentication")){deleteElem(documen
 if(document.querySelector("img[src='/panel/images/pl-sidebar-upgrade.png']")){deleteElem(document.querySelector("img[src='/panel/images/pl-sidebar-upgrade.png']").parentNode);}
 if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")&&!queries.option){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']").parentNode.parentNode.parentNode);}
 if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']"));}
-var uls = document.querySelectorAll('a[href*='option=upgrade'], a[href*='ifastnet.com']');
+var uls = document.querySelectorAll("a[href*='option=upgrade'], a[href*='ifastnet.com']");
 for(var i=0;i<uls.length;++i) {
 deleteElm(uls[i]);
 }
