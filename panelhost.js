@@ -24,6 +24,6 @@ if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecke
 if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']"));}
 var uls = document.querySelectorAll("a[href*='option=upgrade'], a[href*='ifastnet.com']");
 for(var i=0;i<uls.length;++i) {
-deleteElm(uls[i]);
+deleteElem(uls[i]);
 }
 });
