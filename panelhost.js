@@ -1,5 +1,7 @@
 function deleteElem(elem){elem.parentNode.removeChild(elem);}
+
 function startsWith(str,word){return str.lastIndexOf(word,0)===0;}
+
 function endsWith(str,word){return str.indexOf(word,str.length-word.length)!==-1;}
 
 function get_query(){
@@ -29,8 +31,10 @@ function replaceInText(element, pattern, replacement) {
 
 
 var queries=get_query();
+
 if(queries.option=="upgrade-new"||queries.option=="upgrade"||queries.option=="remotemysql"||queries.option=="psql"){document.getElementsByTagName("html")[0].innerHTML="Error #293951245 Please contact support"}
 
+if(document.querySelector("img[src='/panel/images/pl-sidebar-upgrade.png']")){deleteElem(document.querySelector("img[src='/panel/images/pl-sidebar-upgrade.png']").parentNode);}
 
 if(queries.option){
 replaceInText(document.body, "MySQL external access", "");
@@ -46,7 +50,7 @@ replaceInText(document.body, "Would like a one click backup tool ? Upgrade to pr
 replaceInText(document.body, "Get the latest cPanel, free domain names, free SSL certificates for all your domain, Softaculous, enhanced PHP, Massive MySQL performance, Perl, Ruby on rails and much much more on Premium hosting now !", "");
 replaceInText(document.body, "Free domains are included with most plans including .COM, .NET, .ORG and .INFO", "");
 replaceInText(document.body, "Did you know premium hosting allows you to create individual MySQL users and privileges? All premium accounts have upto 1GB of mysql storage.", "");
-replaceInText(document.body, 'To see a demo:  Click here', "");
+replaceInText(document.body, 'To see a demo: Click here', "");
 replaceInText(document.body, "Premium hosting MySQL server benefits :", "");
 replaceInText(document.body, "- Create individual MySQL users.", "");
 replaceInText(document.body, "- Set individual MySQL grants per user.", "");
@@ -62,17 +66,28 @@ replaceInText(document.body, "To get the extra functionality of the Site builder
 replaceInText(document.body, "Or you can upgrade your entire free hosting account to premium using our upgrade process here:", "");
 replaceInText(document.body, "Upgrade to a iFastNet paid plan to get PHP selector with the option of PHP 4.4, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 & 8.1 !", "");
 replaceInText(document.body, "Upgrade to a paid plan to get Cron functionality, SMTP/POP/IMAP, PHPSendmail, free domains and unlimited space!", "");
+var uls = document.querySelectorAll("a[href*='option=upgrade'], a[href*='//ifastnet.com']");
+for(var i=0;i<uls.length;++i) {
+deleteElem(uls[i]);
+}
 }
 
 document.addEventListener("DOMContentLoaded",function(event){
 if(document.getElementById("advanced-body")){document.getElementById("advanced-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\"><a id=\"icon-simple_zone_editor\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-simple_zone_editor\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">\r\n<\/a><a id=\"item_simple_zone_editor\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">CNAME Records<\/a>\r\n<\/div>');}
 if(document.getElementById("software-body")){document.getElementById("software-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\">\r\n<a id=\"icon-cloudflare\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-cloudflare\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">\r\n<\/a><a id=\"item_cloudflare\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">Cloudflare<\/a>\r\n<\/div>');}
 if(document.getElementById("item_two_factor_authentication")){deleteElem(document.getElementById("item_two_factor_authentication").parentNode);}
-if(document.querySelector("img[src='/panel/images/pl-sidebar-upgrade.png']")){deleteElem(document.querySelector("img[src='/panel/images/pl-sidebar-upgrade.png']").parentNode);}
 if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")&&!queries.option){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']").parentNode.parentNode.parentNode);}
 if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']"));}
-var uls = document.querySelectorAll("a[href*='option=upgrade'], a[href*='//ifastnet.com']");
-for(var i=0;i<uls.length;++i) {
-deleteElem(uls[i]);
-}
-});
+if(document.getElementById("item_remote_mysql")){deleteElem(document.getElementById("item_remote_mysql").parentNode);}
+if(document.getElementById("item_postgresql_databases")){deleteElem(document.getElementById("item_postgresql_databases").parentNode);}
+},false);
+
+document.addEventListener("load",function(event){
+if(document.getElementById("advanced-body")){document.getElementById("advanced-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\"><a id=\"icon-simple_zone_editor\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-simple_zone_editor\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">\r\n<\/a><a id=\"item_simple_zone_editor\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">CNAME Records<\/a>\r\n<\/div>');}
+if(document.getElementById("software-body")){document.getElementById("software-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\">\r\n<a id=\"icon-cloudflare\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-cloudflare\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">\r\n<\/a><a id=\"item_cloudflare\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">Cloudflare<\/a>\r\n<\/div>');}
+if(document.getElementById("item_two_factor_authentication")){deleteElem(document.getElementById("item_two_factor_authentication").parentNode);}
+if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")&&!queries.option){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']").parentNode.parentNode.parentNode);}
+if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']"));}
+if(document.getElementById("item_remote_mysql")){deleteElem(document.getElementById("item_remote_mysql").parentNode);}
+if(document.getElementById("item_postgresql_databases")){deleteElem(document.getElementById("item_postgresql_databases").parentNode);}
+},false);
