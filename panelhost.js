@@ -72,7 +72,7 @@ deleteElem(uls[i]);
 }
 }
 
-document.write("<style type='text/css'>#item_two_factor_authentication{display:none;}</style>");
+document.write("<style type='text/css'>#item_two_factor_authentication,#icon-two_factor_authentication{display:none;}</style>");
 
 document.addEventListener("DOMContentLoaded",function(event){
 console.log("dcl");
@@ -87,6 +87,17 @@ if(document.getElementById("item_postgresql_databases")){deleteElem(document.get
 
 document.addEventListener("readystatechange",function(event){
 console.log("rsc");
+if(document.getElementById("advanced-body")){document.getElementById("advanced-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\"><a id=\"icon-simple_zone_editor\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-simple_zone_editor\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">\r\n<\/a><a id=\"item_simple_zone_editor\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">CNAME Records<\/a>\r\n<\/div>');}
+if(document.getElementById("software-body")){document.getElementById("software-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\">\r\n<a id=\"icon-cloudflare\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-cloudflare\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">\r\n<\/a><a id=\"item_cloudflare\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">Cloudflare<\/a>\r\n<\/div>');}
+if(document.getElementById("item_two_factor_authentication")){deleteElem(document.getElementById("item_two_factor_authentication").parentNode);}
+if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")&&!queries.option){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']").parentNode.parentNode.parentNode);}
+if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']"));}
+if(document.getElementById("item_remote_mysql")){deleteElem(document.getElementById("item_remote_mysql").parentNode);}
+if(document.getElementById("item_postgresql_databases")){deleteElem(document.getElementById("item_postgresql_databases").parentNode);}
+});
+
+document.addEventListener("load",function(event){
+console.log("lod");
 if(document.getElementById("advanced-body")){document.getElementById("advanced-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\"><a id=\"icon-simple_zone_editor\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-simple_zone_editor\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">\r\n<\/a><a id=\"item_simple_zone_editor\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">CNAME Records<\/a>\r\n<\/div>');}
 if(document.getElementById("software-body")){document.getElementById("software-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\">\r\n<a id=\"icon-cloudflare\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-cloudflare\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">\r\n<\/a><a id=\"item_cloudflare\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">Cloudflare<\/a>\r\n<\/div>');}
 if(document.getElementById("item_two_factor_authentication")){deleteElem(document.getElementById("item_two_factor_authentication").parentNode);}
