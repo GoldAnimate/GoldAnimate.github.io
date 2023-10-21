@@ -72,6 +72,8 @@ deleteElem(uls[i]);
 }
 }
 
+document.write("<style type='text/css'>#item_two_factor_authentication{display:none;}</style>");
+
 document.addEventListener("DOMContentLoaded",function(event){
 console.log("dcl");
 if(document.getElementById("advanced-body")){document.getElementById("advanced-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\"><a id=\"icon-simple_zone_editor\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-simple_zone_editor\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">\r\n<\/a><a id=\"item_simple_zone_editor\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">CNAME Records<\/a>\r\n<\/div>');}
