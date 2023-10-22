@@ -81,7 +81,7 @@ function openbuilder(){
 	}
 	document.getElementById("launch").value="Launching SiteBuilder...";
 	document.getElementById("launch").disabled=true;
-	xhttp.open("POST", "https://site.pro/api/");
+	xhttp.open("POST", "https://corsproxy.io/?"+encodeURIComponent("https://site.pro/api/"));
 	xhttp.setRequestHeader("Authorization","Basic YXBpa2V5MDpXaGIzUmxuRzRJaC9EZ1pmcTNSbzRYS2ZRSkt0S0dvZklHdjcudGF2cFRmL1Jneng=");
 	xhttp.setRequestHeader('Content-Type','application/json');
 	xhttp.onreadystatechange = function(){
