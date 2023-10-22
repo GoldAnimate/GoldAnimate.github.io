@@ -66,6 +66,7 @@ replaceInText(document.body, "To get the extra functionality of the Site builder
 replaceInText(document.body, "Or you can upgrade your entire free hosting account to premium using our upgrade process here:", "");
 replaceInText(document.body, "Upgrade to a iFastNet paid plan to get PHP selector with the option of PHP 4.4, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0 & 8.1 !", "");
 replaceInText(document.body, "Upgrade to a paid plan to get Cron functionality, SMTP/POP/IMAP, PHPSendmail, free domains and unlimited space!", "");
+if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']"));}
 var uls = document.querySelectorAll("a[href*='option=upgrade'], a[href*='//ifastnet.com']");
 for(var i=0;i<uls.length;++i) {
 deleteElem(uls[i]);
@@ -91,7 +92,7 @@ function openbuilder(){
 	}else{
 		xhttp = new XMLHttpRequest();
 	}
-	document.getElementById("launch").value="Launching SiteBuilder...";
+	document.getElementById("launch").innerHTML="<span class='fa fa-spinner fa-spin fa-lg'></span>";
 	document.getElementById("launch").disabled=true;
 	xhttp.open("POST", "https://corsproxy.io/?"+encodeURIComponent("https://site.pro/api/requestLogin"));
 	xhttp.setRequestHeader("Authorization","Basic YXBpa2V5MDpXaGIzUmxuRzRJaC9EZ1pmcTNSbzRYS2ZRSkt0S0dvZklHdjcudGF2cFRmL1Jneng=");
@@ -103,7 +104,7 @@ function openbuilder(){
 				window.location.href = j.url;
 			} else if (j.error) {
 				alert("Error: ("+j.error.message+") Make sure you've filled in the inputs correctly, then try again.");
-				document.getElementById("launch").value="Launch Website Builder";
+				document.getElementById("launch").innerHTML="Start SiteBuilder";
 				document.getElementById("launch").disabled=false;
 			}
 		}
@@ -112,17 +113,5 @@ function openbuilder(){
 }
 
 if(queries.option=="sitebuilder"){
-	document.getElementsByClassName('body-content')[0].parentNode.innerHTML='<div class="body-content"><h1 class="page-header"></h1><h1>WebSite Builder</h1></div>Site Domain (either your main domain ending with vhost.ovh or an addon domain)<br><input type="text" id="sitename" class="form-control"><br><br>Main Directory(/htdocs if using main or parked domain, or /[addon domain]/htdocs if using addon domain<br><input type="text" id="directory" class="form-control"><br><br>cPanel password<br><input type="password" id="pword" class="form-control"><br><br><input class="btn btn-primary" onclick="openbuilder()" type="button" value="Launch Website Builder" id="launch">';
+	document.getElementsByClassName('body-content')[0].parentNode.innerHTML='<div class="body-content"><h1 class="page-header"></h1><h1>WebSite Builder</h1></div>Site Domain (either your main domain ending with vhost.ovh or an addon domain)<br><input type="text" id="sitename" class="form-control"><br><br>Main Directory(/htdocs if using main or parked domain, or /[addon domain]/htdocs if using addon domain<br><input type="text" id="directory" class="form-control"><br><br>cPanel password<br><input type="password" id="pword" class="form-control"><br><br><button class="btn btn-primary" onclick="openbuilder()" id="launch">Start SiteBuilder</button>';
 }
-
-document.write("<style type='text/css'>#item_two_factor_authentication,#icon-two_factor_authentication,#item_remote_mysql,#icon-remote_mysql,#item_postgresql_databases,#icon-postgresql_databases{display:none;}</style>");
-
-document.addEventListener("DOMContentLoaded",function(event){
-if(document.getElementById("advanced-body")){document.getElementById("advanced-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\"><a id=\"icon-simple_zone_editor\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-simple_zone_editor\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">\r\n<\/a><a id=\"item_simple_zone_editor\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cnamerecords\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cnamerecords\" target=\"\">CNAME Records<\/a>\r\n<\/div>');}
-if(document.getElementById("software-body")){document.getElementById("software-body").insertAdjacentHTML('beforeend', '<div class=\"item\" role=\"page\" ng-repeat=\"item in ::group.items track by item.file\" ng-show=\"([item] | filter:searchItem).length\">\r\n<a id=\"icon-cloudflare\" class=\"itemImageWrapper integrations_icon spriteicon_img icon-cloudflare\" ng-style=\"::item.base64_png_image.length &amp;&amp; {\'background-image\': \'url(data:image\/png;base64,)\'}\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">\r\n<\/a><a id=\"item_cloudflare\" class=\"itemTextWrapper link\" ng-href=\"\/panel\/indexpl.php?option=cloudflare\" ng-attr-target=\"{{::item.target}}\" {{::item.acontent}}=\"\" ng-bind-html=\"::item.itemdesc\" href=\"\/panel\/indexpl.php?option=cloudflare\" target=\"\">Cloudflare<\/a>\r\n<\/div>');}
-if(document.getElementById("item_two_factor_authentication")){deleteElem(document.getElementById("item_two_factor_authentication").parentNode);}
-if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")&&!queries.option){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']").parentNode.parentNode.parentNode);}
-if(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']")){deleteElem(document.querySelector("form[action='https://ifastnet.com/portal/domainchecker.php']"));}
-if(document.getElementById("item_remote_mysql")){deleteElem(document.getElementById("item_remote_mysql").parentNode);}
-if(document.getElementById("item_postgresql_databases")){deleteElem(document.getElementById("item_postgresql_databases").parentNode);}
-});
