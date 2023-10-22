@@ -86,7 +86,7 @@ function openbuilder(){
 	xhttp.setRequestHeader('Content-Type','application/json');
 	xhttp.onreadystatechange = function(){
 		if(xhttp.readyState == 4 && xhttp.status == 200) {
-			var j = eval('(' + http.responseText + ')');
+			var j = eval('(' + xhttp.responseText + ')');
 			if (j.url) {
 				window.location.href = j.url;
 			}
