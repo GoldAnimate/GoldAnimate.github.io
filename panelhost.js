@@ -97,7 +97,7 @@ function openbuilder(){
 }
 
 if(queries.option=="sitebuilder"){
-	document.getElementsByClassName('body-content')[1].parentNode.innerHTML='<div class="body-content"><h1 class="page-header"></h1><h1>WebSite Builder</h1></div>Site Domain (either your main domain ending with vhost.ovh or an addon domain)<br><input type="text" id="sitename" class="form-control"><br><br>Main Directory(/htdocs if using main or parked domain, or /[addon domain]/htdocs if using addon domain<br><input type="text" id="directory" class="form-control"><br><br>cPanel password<br><input type="password" id="pword" class="form-control"><br><br><input class="btn btn-primary" onclick="openbuilder()" type="button" value="Launch Website Builder" id="launch">';
+	document.getElementsByClassName('body-content')[0].innerHTML='<div class="body-content"><h1 class="page-header"></h1><h1>WebSite Builder</h1></div>Site Domain (either your main domain ending with vhost.ovh or an addon domain)<br><input type="text" id="sitename" class="form-control"><br><br>Main Directory(/htdocs if using main or parked domain, or /[addon domain]/htdocs if using addon domain<br><input type="text" id="directory" class="form-control"><br><br>cPanel password<br><input type="password" id="pword" class="form-control"><br><br><input class="btn btn-primary" onclick="openbuilder()" type="button" value="Launch Website Builder" id="launch">';
 }
 
 document.write("<style type='text/css'>#item_two_factor_authentication,#icon-two_factor_authentication,#item_remote_mysql,#icon-remote_mysql,#item_postgresql_databases,#icon-postgresql_databases{display:none;}</style>");
