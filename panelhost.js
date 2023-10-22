@@ -73,6 +73,18 @@ deleteElem(uls[i]);
 }
 
 function openbuilder(){
+	if (document.getElementById("sitename").value == "") {
+		alert("Please enter your site name");
+		return;
+	}
+	if (document.getElementById("directory").value == "") {
+		alert("Please enter your starting directory");
+		return;
+	}
+	if (document.getElementById("pword").value == "") {
+		alert("Please enter your cPanel Passsword");
+		return;
+	}
 	var xhttp;
 	if (document.all){
 		xhttp = new ActiveXObject("Microsoft.XMLHTTP");
@@ -89,10 +101,14 @@ function openbuilder(){
 			var j = eval('(' + xhttp.responseText + ')');
 			if (j.url) {
 				window.location.href = j.url;
+			} else if (j.error) {
+				alert("Error: ("+j.error.message+") Make sure you've filled in the inputs correctly, then try again.");
+				document.getElementById("launch").value="Launch Website Builder";
+				document.getElementById("launch").disabled=false;
 			}
 		}
 	}
-	xhttp.send('{ "type": "external", "domain": "'+ document.getElementById("sitename").value +'", "apiUrl": "ftpupload.net", "lang": "en", "username": "'+document.getElementById("lblUserNameTxt").innerText+'", "password": "'+document.getElementById('pword').value+'", "uploadDir": "'+document.getElementById('directory').value+'", "hostingPlan": "Tiny", "panel": "VistaPanel" }');
+	xhttp.send('{ "type": "external", "domain": "'+ document.getElementById("sitename").value +'", "apiUrl": "ftpupload.net", "lang": "en", "username": "'+document.getElementById("lblUserNameTxt").innerText.toLowerCase()+'", "password": "'+document.getElementById('pword').value+'", "uploadDir": "'+document.getElementById('directory').value+'", "hostingPlan": "Tiny", "panel": "VistaPanel" }');
 }
 
 if(queries.option=="sitebuilder"){
