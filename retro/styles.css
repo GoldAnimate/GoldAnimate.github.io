@@ -556,7 +556,7 @@ div.anim_proxy .item {
 #stats_extended {
     box-shadow: none;
     border-radius: 0;
-    padding-left: 15px ;
+    padding-left: 15px !important;
 }
 
 #content-stats {
