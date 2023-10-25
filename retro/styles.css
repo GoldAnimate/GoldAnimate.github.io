@@ -88,7 +88,7 @@ aside {
     width: 713px;
     margin: 0;
     margin-top: 80px;
-    padding: 0;
+    padding: 0 !important;
 }
 
 #main {
@@ -103,7 +103,7 @@ aside {
 }
 
 .navbar-brand-logo {
-    left: -20px;
+    left: 540px;
     top: 20px;
     height: 50px;
     position: relative;
@@ -436,6 +436,26 @@ span.input-group-addon {
     text-transform: inherit;
 }
 
+.panel-widget {
+    border: 1px solid #cccccc;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+
+#stats {
+    float: left !important;
+}
+
+.col-md-3 {
+    width: 33% !important;
+    min-width: 33%;
+    max-width: 33%;
+}
+
+#main {
+    float: right !important;
+}
+
 .cellbox-body {
     padding-left: 0;
     padding-bottom: 10px;
@@ -526,11 +546,15 @@ div.anim_proxy .item {
 #news,
 #resellerToolbox,
 #themeSelection,
-#stats-header,
+#stats-header {
+    box-shadow: none;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+}
+
 #stats,
 #stats_extended {
     box-shadow: none;
-    border: 1px solid #cccccc;
     border-radius: 0;
 }
 
