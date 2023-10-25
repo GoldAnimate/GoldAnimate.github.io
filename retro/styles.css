@@ -93,7 +93,7 @@ aside {
 
 #main {
     /* preventing responsiveness to smaller screen sizes because X3 doesn't do that */
-    width: 65%;
+    width: 67%;
     padding-left: 0;
     margin-left: 0;
 }
@@ -556,6 +556,7 @@ div.anim_proxy .item {
 #stats_extended {
     box-shadow: none;
     border-radius: 0;
+    padding-left: 15px;
 }
 
 #content-stats {
