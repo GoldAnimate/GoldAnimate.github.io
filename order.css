@@ -1,0 +1,371 @@
+body {
+    background-color: #FFFFFF;
+
+    border-width: 0px;
+    border-style: none;
+    border-color: #999999;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.text,
+.signupFormViewCartLink {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 11px;
+    color: #5F5F5F;
+}
+
+.signupFormTermsLinks {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.signupFormTermsLinks a {
+    font-size: 11px;
+    color: #5F5F5F;
+    font-weight: normal;
+    text-decoration: none;
+
+    background-color: #FFFFFF;
+
+    border-width: 0px;
+    border-style: none;
+    border-color: #999999;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.signupFormViewCartBox {
+    font-size: 11px;
+    color: #5F5F5F;
+
+    background-color: #FFFFFF;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.signupFormSteps {
+}
+.signupFormStepOff {
+    font-size: 11px;
+    color: #5F5F5F;
+    font-weight: normal;
+    vertical-align: top;
+
+    background-color: #F9F9F9;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.signupFormStepOn {
+    font-size: 11px;
+    color: #000000;
+    font-weight: normal;
+    vertical-align: top;
+
+    background-color: #F9F9F9;
+
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+.sectionDiv {
+    background-color: #FFFFFF;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.signupSectionTbl {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+
+.signupFormSectionTitle {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: bold;
+
+    background-color: #C70707;
+
+    border-width: 0px;
+    border-style: none;
+    border-color: #999999;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.signupFormDomainResults {
+    padding: 0;
+}
+.signupFormDomainResultsTitle,
+.signupFormDomainResultsRegisterTitle,
+.signupFormDomainResultsTransferTitle {
+    margin: 0;
+}
+
+.signupSectionProductTbl th,
+.signupFormDomainResultsTitle,
+.signupFormDomainResultsRegisterTitle,
+.signupFormDomainResultsTransferTitle {
+    font-size: 11px;
+    color: #5F5F5F;
+    text-align: left;
+    font-weight: bold;
+
+    background-color: #D6D6D6;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.signupSectionProductTbl .productTd,
+.signupSectionTbl .SectionTblTd {
+    font-size: 11px;
+    color: #5F5F5F;
+    font-weight: normal;
+
+    background-color: #FFFFFF;
+
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #AFAFAF;
+
+    padding-top: 6px;
+    padding-right: 2px;
+    padding-bottom: 6px;
+    padding-left: 2px;
+}
+
+.signupFormDomainResultsTbl td {
+    padding-top: 6px;
+    padding-right: 2px;
+    padding-bottom: 6px;
+    padding-left: 2px;
+}
+
+.bonusBox,
+.sslDetailsBox {
+    font-size: 11px;
+    color: #5F5F5F;
+    font-weight: bold;
+
+    background-color: #FFFFEC;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E4E4E4;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+.note_ssls,
+.note_vps,
+.vat_note {
+    font-size: 11px;
+    color: #5F5F5F;
+    font-weight: normal;
+
+    background-color: #FFFFEC;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #5F5F5F;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+.productOn {
+    background-color: #EEFDFE !important;
+
+    padding-top: 6px;
+    padding-right: 2px;
+    padding-bottom: 6px;
+    padding-left: 2px;
+}
+
+.signupFormTitle {
+    display: table-cell;
+
+    height: 12px;
+    line-height: 12px;
+    text-align: start;
+
+    font-size: 12px;
+    color: #000000;
+    text-align: start;
+    font-weight: normal;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.signupFormInputbox,
+.signupFormDropdown,
+.contactsDropdown {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 11px;
+    color: #333333;
+    font-weight: normal;
+
+    background-color: #FFFFFF;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #5F5F5F;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+.signupFormInputbox::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #FFFFFF;
+}
+.signupFormInputbox::-moz-placeholder { /* Firefox 19+ */
+    color: #FFFFFF;
+}
+.signupFormInputbox:-ms-input-placeholder { /* IE 10+ */
+    color: #FFFFFF;
+}
+.signupFormInputbox:-moz-placeholder { /* Firefox 18- */
+    color: #FFFFFF;
+}
+
+.signupFormButton {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 11px;
+    color: #FFFFFF;
+    font-weight: bold;
+
+    background-color: #C70707;
+
+    border-width: 1px;
+    border-style: none;
+    border-color: #5F5F5F;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    padding-top: 5px;
+    padding-right: 35px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+}
+
+.small_button {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: normal;
+
+    background-color: #C70707;
+
+    border-width: 1px;
+    border-style: none;
+    border-color: #5F5F5F;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    padding-top: 3px;
+    padding-right: 25px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+}
+
+.signupFormErrorBox {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 12px;
+    color: #C70707;
+    text-align: normal;
+    font-weight: normal;
+
+    background-color: #F6F6F6;
+    background-image: none;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #818181;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.signupFormSuccessBox {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 11px;
+    color: #5F5F5F;
+}
