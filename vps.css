@@ -1,0 +1,128 @@
+table.compare_servers_tbl {
+    font-family: Arial, Helvetica, Sans-Serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+}
+table.compare_servers_tbl td {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCCCCC;
+
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+
+
+table.compare_servers_tbl td.server_name {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+
+    background: #EAE5E5;
+
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-left-color: #CCCCCC;
+
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+}
+table.compare_servers_tbl th,
+table.compare_servers_tbl th.compare_servers_tbl_section_title {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 12px;
+    color: #000000;
+    text-align: left;;
+    font-weight: bold;
+
+    background-color: #EEEEEE;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+table.compare_servers_tbl td.server_compare_parameter,
+table.compare_servers_tbl td.server_compare_sign_up_first {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #000000;
+    text-align: start;
+    font-weight: bold;
+
+    background-color: #FFFFFF;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+
+    border-left-width: 1px;
+    border-left-style: none;
+    border-left-color: #CCCCCC;
+
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+.tip {
+    background: url(../images/tip.png) top left no-repeat;
+    border-width: 0px;
+    border-style: none;
+    border-color: #000000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.tip a {
+    color: #000000;
+}
+
+.compare_order_link {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background: #B607C3;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B607C3;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
