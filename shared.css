@@ -1,0 +1,138 @@
+table.compare_tbl {
+    font-family: Arial, Helvetica, Sans-Serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B001FE;
+}
+table.compare_tbl td {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #B001FE;
+
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #B001FE;
+
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+table.compare_tbl td.plan_name {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+
+    background: #B001FE;
+
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-top-color: #B001FE;
+
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-left-color: #B001FE;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+table.compare_tbl th.plan_name,
+table.compare_tbl th.compare_parameter {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: left;;
+    font-weight: bold;
+
+    background-color: #C950FF;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #B001FE;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+table.compare_tbl th,
+table.compare_tbl th.compare_button_td {
+    background-color: #C950FF;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #B001FE;
+}
+table.compare_tbl td.compare_parameter {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #000000;
+    text-align: start;
+    font-weight: normal;
+
+    background-color: #FFFFFF;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #B001FE;
+
+    border-left-width: 1px;
+    border-left-style: none;
+    border-left-color: #B001FE;
+
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+.tip {
+    background: url(../images/tip.png) top left no-repeat;
+    border-width: 0px;
+    border-style: none;
+    border-color: #000000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.tip a {
+    color: #000000;
+}
+
+.compare_order_link {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    font-size: 12px;
+    color: #FEFEFE;
+    font-weight: bold;
+    background: #D60000;
+
+    border-width: 0px;
+    border-style: none;
+    border-color: #999999;
+
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
