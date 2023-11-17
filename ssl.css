@@ -1,0 +1,110 @@
+.ssls_det_tbl {
+    font-family: Arial, Helvetica, Sans-Serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+}
+
+.ssls_det_tbl td {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    font-weight: normal;
+
+    background-color: #FFFFFF;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCCCCC;
+
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+
+td.ssl_title {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+
+    background: #EAE5E5;
+
+    border-top-width: 1px;
+    border-top-style: none;
+    border-top-color: #CCCCCC;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCCCCC;
+
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+
+.tip {
+    background: url(../images/tip.png) top left no-repeat;
+    border-width: 0px;
+    border-style: none;
+    border-color: #000000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.tip a {
+    color: #000000;
+}
+
+td.ssl_name {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+
+    background: #FFFFFF;
+
+    padding-top: 1px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+
+    border-left-width: 0px;
+    border-left-style: none;
+    border-left-color: #CCCCCC;
+}
+
+td.ssl_price {
+    font-weight: bold;
+}
+
+.ssls_det_order_link {
+    font-family: Arial, Helvetica, Sans-Serif;
+    background: #B607C3;
+    font-size: 13px;
+    color: #FFFFFF;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B607C3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
