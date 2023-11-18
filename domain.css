@@ -1,0 +1,154 @@
+table.domain_search_tbl {
+    background-color: #FFFFFF;
+
+    border-width: 0px;
+    border-style: none;
+    border-color: #999999;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+td.domain_search_label {
+    display: table-cell;
+
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #333333;
+}
+
+input.domain_search_input,
+select.domain_search_select {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #333333;
+    text-align: start;
+    font-weight: normal;
+
+    background-color: #FFFFFF;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999999;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+
+    padding-top: 1px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+}
+
+.domain_search_results_tbl {
+    width: 100%;
+    background-color: #FFFFFF;
+
+    border-width: 1px;
+    border-style: none;
+    border-color: #999999;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.domain_search_results_tbl td {
+    font-family: Arial, Helvetica, Sans-Serif;
+
+    color: #000000;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.domain_search_register_label,
+.domain_search_transfer_label {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 13px !important;
+    color: #FFFFFF !important;
+    text-align: left !important;
+    font-weight: bold;
+
+    background-color: #C70707;
+
+    border-top-width: 1px;
+    border-top-style: none;
+    border-top-color: #000000;
+
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-bottom-color: #000000;
+
+    padding-top: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+}
+
+.domain_search_register_checkbox_on,
+.domain_search_transfer_checkbox_on,
+.domain_search_register_checkbox_on,
+.domain_search_register_domain_on,
+.domain_search_register_domain_on .domain_search_domain_reg,
+.domain_search_transfer_domain_on,
+.domain_search_transfer_domain_on .domain_search_domain_tr,
+.domain_search_register_period_on,
+.domain_search_transfer_period_on,
+.domain_search_register_price_on,
+.domain_search_transfer_price_on {
+    color: #000000 !important;
+
+    background: #EEEEEE;
+}
+
+/* buttons */
+input.domain_search_submit,
+.domain_search_order_btn {
+    height: unset;
+    line-height: unset;
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 11px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #C70707;
+
+    border-width: 1px;
+    border-style: none;
+    border-color: #000000;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    padding-top: 5px;
+    padding-right: 35px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+}
+
+.domain_search_error {
+    font-size: 12px !important;
+    color: #C70707 !important;
+    text-align: start !important;
+    font-weight: normal;
+
+    background-color: #F6F6F6;
+
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #818181 !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+
+    padding-top: 5px !important;
+    padding-right: 5px !important;
+    padding-bottom: 5px !important;
+    padding-left: 5px !important;
+}
