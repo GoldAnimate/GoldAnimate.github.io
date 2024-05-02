@@ -5,7 +5,7 @@ function startsWith(str,word){return str.lastIndexOf(word,0)===0;}
 function endsWith(str,word){return str.indexOf(word,str.length-word.length)!==-1;}
 
 function get_query(){
-var url = location.search;
+var url = window.location.href;
 var qs = url.substring(url.indexOf('?') + 1).split('&');
 for(var i = 0, result = {}; i < qs.length; i++){
 qs[i] = qs[i].split('=');
@@ -73,6 +73,9 @@ deleteElem(uls[i]);
 }
 }
 
+var username = "";
+var pass = "";
+
 function openbuilder(){
 	if (document.getElementById("sitename").value == "") {
 		alert("Please enter your site name");
@@ -80,10 +83,6 @@ function openbuilder(){
 	}
 	if (document.getElementById("directory").value == "") {
 		alert("Please enter your starting directory");
-		return;
-	}
-	if (document.getElementById("pword").value == "") {
-		alert("Please enter your cPanel Passsword");
 		return;
 	}
 	var xhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
@@ -104,10 +103,22 @@ function openbuilder(){
 			}
 		}
 	}
-	xhttp.send('{ "type": "external", "domain": "'+ document.getElementById("sitename").value +'", "apiUrl": "ftpupload.net", "lang": "en", "username": "'+document.getElementById("lblUserNameTxt").innerText.toLowerCase()+'", "password": "'+document.getElementById('pword').value+'", "uploadDir": "'+document.getElementById('directory').value+'", "hostingPlan": "Tiny", "panel": "VistaPanel" }');
+	xhttp.send('{ "type": "external", "domain": "'+ document.getElementById("sitename").value +'", "apiUrl": "ftpupload.net", "lang": "en", "username": "'+username+'", "password": "'+JSON.stringify(pass)+'", "uploadDir": "'+document.getElementById('directory').value+'", "hostingPlan": "Tiny", "panel": "VistaPanel" }');
 }
 
 if(queries.option=="sitebuilder"){
-	document.getElementsByClassName('body-content')[0].parentNode.innerHTML='<div class="body-content"><h1 class="page-header"></h1><h1>WebSite Builder</h1></div>Site Domain (either your main domain ending with vhost.ovh or an addon domain)<br><input type="text" id="sitename" class="form-control"><br><br>Main Directory(/htdocs if using main or parked domain, or /[addon domain]/htdocs if using addon domain<br><input type="text" id="directory" class="form-control"><br><br>cPanel password<br><input type="password" id="pword" class="form-control"><br><br><button class="btn btn-primary" id="launch">Start SiteBuilder</button>';
+	var xhttpzero = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+	xhttpzero.open("GET",((window.location.href.substring(0, 6) == "https:" ? "https:" : "http:") + "//cpanel.vhost.ovh/panel/indexpl.php"));
+	xhttpzero.onreadystatechange = function(){
+		if(xhttpzero.readyState == 4 && xhttpzero.status == 200) {
+			var mype = xhttpzero.responseText.substr(xhttpzero.responseText.indexOf("filemanager.ai")+37);
+			mype = mype.substr(0,mype.indexOf('"'));
+			var userpassSplit = mype.split("/");
+			username = userpassSplit[0];
+			pass = eval("(" + atob(userpassSplit[1]) + ")").c.p;
+		}
+	}
+	xhttpzero.send();
+	document.getElementsByClassName('body-content')[0].parentNode.innerHTML='<div class="body-content"><h1 class="page-header"></h1><h1>WebSite Builder</h1></div>Site Domain (either your main domain ending with vhost.ovh or an addon domain)<br><input type="text" id="sitename" class="form-control"><br><br>Main Directory(/htdocs if using main or parked domain, or /[addon domain]/htdocs if using addon domain<br><input type="text" id="directory" class="form-control"><br><br><button class="btn btn-primary" id="launch">Start SiteBuilder</button>';
 	document.getElementById("launch").addEventListener("click",openbuilder);
 }
