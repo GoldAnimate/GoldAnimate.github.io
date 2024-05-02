@@ -103,7 +103,18 @@ function openbuilder(){
 			}
 		}
 	}
-	xhttp.send('{ "type": "external", "domain": "'+ document.getElementById("sitename").value +'", "apiUrl": "ftpupload.net", "lang": "en", "username": "'+username+'", "password": "'+JSON.stringify(pass)+'", "uploadDir": "'+document.getElementById('directory').value+'", "hostingPlan": "Tiny", "panel": "VistaPanel" }');
+	var thejson = {
+		"type" : "external",
+		"domain": document.getElementById("sitename").value,
+		"apiUrl": "ftpupload.net",
+		"lang": "en",
+		"username": username,
+		"password": pass,
+		"uploadDir": document.getElementById('directory').value,
+		"hostingPlan": "tiny",
+		"panel": "VistaPanel"
+	}
+	xhttp.send(JSON.stringify(thejson));
 }
 
 if(queries.option=="sitebuilder"){
