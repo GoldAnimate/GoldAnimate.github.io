@@ -1,1 +1,1 @@
-document.open();document.write(location.hostname+" is now Wrapper Online Diamond. Redirecting...")location.replace("http://wrapperonlinediamond.waterdroprio.cc/");
+document.open();document.write(window.location.hostname+" is now Wrapper Online Diamond. Redirecting...");window.location.replace("http://wrapperonlinediamond.waterdroprio.cc/");
